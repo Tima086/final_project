@@ -1,0 +1,21 @@
+.point {
+	position:fixed;
+	width:180px;
+	height:180px;
+	background-image: url(https://orig00.deviantart.net/8b00/f/2015/297/8/c/8cf46251e5a775a7a2f15cd8cec2027f-d9e9jp6.gif);
+	background-repeat:no-repeat;
+	background-size:contain;
+background-position: center center;
+}
+.personage {
+	position:fixed;
+	top:0;
+  left:0;
+	width:80px;
+	height:auto;
+}
+body {
+	background-color: #1E90FF;
+	color:white;
+	font-family:Arial;
+}

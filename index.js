@@ -1,5 +1,5 @@
 var pointCoord = [
-    [ 50, 50 ], [ 200, 130 ], [ 400, 130 ], [ 100, 300 ]
+    [ 50, 50 ], [ 600, 130 ], [ 1200, 230 ], [ 1000, 500 ], [600, 500], [200, 300]
 ];
 
 ( function setWay () {
@@ -15,7 +15,7 @@ var pointCoord = [
 var personage = {};
 ( function setPersonage () {
     personage = document.createElement ('img')
-    personage.src = "http://i.imgur.com/uohQTdJ.gif"
+    personage.src = "https://img1.picmix.com/output/stamp/normal/5/4/3/3/433345_6f44e.gif"
     personage.className = "personage"
     document.body.appendChild (personage)
     personage.coord = pointCoord [0]

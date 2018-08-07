@@ -13,7 +13,7 @@ var pointCoord = [
 })()
 
 var personage = {};
-( function setPersonage () {
+ (function setPersonage () {
     personage = document.createElement ('img')
     personage.src = "https://img1.picmix.com/output/stamp/normal/5/4/3/3/433345_6f44e.gif"
     personage.className = "personage"
@@ -23,6 +23,23 @@ var personage = {};
     personage.velocity = 5
     personage.interval = setInterval (mc_personage, 100)
 })()
+
+var btn1 = document.createElement ( "button" )
+document.body.appendChild ( btn1 )
+btn1.innerHTML = "STOP"
+btn1.style.padding = "5px 10px"
+btn1.style.fontSize = "16px"
+btn1.onclick = function () {
+        clearInterval ( personage.interval )
+}
+var btn2 = document.createElement ( "button" )
+document.body.appendChild ( btn2 )
+btn2.innerHTML = "START"
+btn2.style.padding = "5px 10px"
+btn2.style.fontSize = "16px"
+btn2.onclick = function () {
+        setInterval (mc_personage, 100)
+}
 
 function mc_personage ( event ) {
 	 var dimX = pointCoord [ personage.nextPoint ][0] -
